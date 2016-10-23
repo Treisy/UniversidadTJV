@@ -6,38 +6,80 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class entProfesores
+    public class entUsuarios
     {
         //Atributos
-        private int _idProfesor;
+        private int _idUsuario;
         private string _cedula;
+        private string _nombreUsuario;
+        private string _contrasena;
         private string _nombre;
         private string _primerApellido;
         private string _segundoApellido;
-        private DateTime _fechaNacimiento;
 
         //Constructor
-        private entProfesores()
+        private entUsuarios()
         {
-            IdProfesor = 0;
+            IdUsuario = 0;
             Cedula = string.Empty;
+            NombreUsuario = string.Empty;
+            Contrasena = string.Empty;
             Nombre = string.Empty;
             PrimerApellido = string.Empty;
             SegundoApellido = string.Empty;
-            FechaNacimiento = DateTime.Now;
         }
 
+
         //Encapsulamientos
-        public int IdProfesor
+        public int IdUsuario
         {
             get
             {
-                return _idProfesor;
+                return _idUsuario;
             }
 
             set
             {
-                _idProfesor = value;
+                _idUsuario = value;
+            }
+        }
+
+        public string Cedula
+        {
+            get
+            {
+                return _cedula;
+            }
+
+            set
+            {
+                _cedula = value;
+            }
+        }
+
+        public string NombreUsuario
+        {
+            get
+            {
+                return _nombreUsuario;
+            }
+
+            set
+            {
+                _nombreUsuario = value;
+            }
+        }
+
+        public string Contrasena
+        {
+            get
+            {
+                return _contrasena;
+            }
+
+            set
+            {
+                _contrasena = value;
             }
         }
 
@@ -79,32 +121,5 @@ namespace Entidades
                 _segundoApellido = value;
             }
         }
-
-        public string Cedula
-        {
-            get
-            {
-                return _cedula;
-            }
-
-            set
-            {
-                _cedula = value;
-            }
-        }
-
-        public DateTime FechaNacimiento
-        {
-            get
-            {
-                return _fechaNacimiento;
-            }
-
-            set
-            {
-                _fechaNacimiento = value;
-            }
-        }
     }
-
 }
