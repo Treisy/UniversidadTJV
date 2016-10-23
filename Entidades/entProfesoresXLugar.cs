@@ -6,22 +6,40 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class entLugares
+    public class entProfesoresXLugar
     {
         //Atributos
+        private int _id;
+        private int _idProfesor;
         private int _idLugar;
-        private string _nombre;
-        private int _padreId;
-
-        //Constructor
-        //private entLugares()
-        //{
-        //    IdLugar = 0;
-        //    Nombre = string.Empty;
-        //    PadreId = 0;
-        //}
 
         //Encapsulamientos
+        public int Id
+        {
+            get
+            {
+                return _id;
+            }
+
+            set
+            {
+                _id = value;
+            }
+        }
+
+        public int IdProfesor
+        {
+            get
+            {
+                return _idProfesor;
+            }
+
+            set
+            {
+                _idProfesor = value;
+            }
+        }
+
         public int IdLugar
         {
             get
@@ -32,32 +50,6 @@ namespace Entidades
             set
             {
                 _idLugar = value;
-            }
-        }
-
-        public string Nombre
-        {
-            get
-            {
-                return _nombre;
-            }
-
-            set
-            {
-                _nombre = value;
-            }
-        }
-
-        public int PadreId
-        {
-            get
-            {
-                return _padreId;
-            }
-
-            set
-            {
-                _padreId = value;
             }
         }
     }
