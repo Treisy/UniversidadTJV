@@ -12,13 +12,17 @@ namespace Entidades
         private int _idMateria;
         private string _nombre;
         private string _codigo;
+        private int _usuarioIngresa;
+        private int _usuarioModifica;
 
         //Constructor
-        private entMaterias()
+        public entMaterias()
         {
             IdMateria = 0;
             Nombre = string.Empty;
             Codigo = string.Empty;
+            UsuarioIngresa = 0;
+            UsuarioModifica = 0;
         }
 
         //Encapsulamientos
@@ -58,6 +62,32 @@ namespace Entidades
             set
             {
                 _codigo = value;
+            }
+        }
+
+        public int UsuarioIngresa
+        {
+            get
+            {
+                return _usuarioIngresa;
+            }
+
+            set
+            {
+                _usuarioIngresa = value;
+            }
+        }
+
+        public int UsuarioModifica
+        {
+            get
+            {
+                return _usuarioModifica;
+            }
+
+            set
+            {
+                _usuarioModifica = value;
             }
         }
     }

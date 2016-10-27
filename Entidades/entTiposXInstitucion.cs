@@ -13,6 +13,19 @@ namespace Entidades
         private string _descripcion;
         private int _idConfiguracion;
         private int _idTipo;
+        private int _usuarioIngresa;
+        private int _usuarioModifica;
+
+        //Constructor
+        public entTiposXInstitucion()
+        {
+            Id = 0;
+            Descripcion = string.Empty;
+            IdConfiguracion = 0;
+            IdTipo = 0;
+            UsuarioIngresa = 0;
+            UsuarioModifica = 0;
+    }
 
         //Encapsulamientos
         public int Id
@@ -64,6 +77,32 @@ namespace Entidades
             set
             {
                 _idTipo = value;
+            }
+        }
+
+        public int UsuarioIngresa
+        {
+            get
+            {
+                return _usuarioIngresa;
+            }
+
+            set
+            {
+                _usuarioIngresa = value;
+            }
+        }
+
+        public int UsuarioModifica
+        {
+            get
+            {
+                return _usuarioModifica;
+            }
+
+            set
+            {
+                _usuarioModifica = value;
             }
         }
     }

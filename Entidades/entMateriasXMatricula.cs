@@ -12,6 +12,18 @@ namespace Entidades
         private int _id;
         private int _idMatricula;
         private int _idMateria;
+        private int _usuarioIngresa;
+        private int _usuarioModifica;
+
+        //Constructor
+        public entMateriasXMatricula()
+        {
+            Id = 0;
+            IdMatricula = 0;
+            IdMateria = 0;
+            UsuarioIngresa = 0;
+            UsuarioModifica = 0;
+    }
 
         //Encapsulamientos
         public int Id
@@ -50,6 +62,32 @@ namespace Entidades
             set
             {
                 _idMateria = value;
+            }
+        }
+
+        public int UsuarioIngresa
+        {
+            get
+            {
+                return _usuarioIngresa;
+            }
+
+            set
+            {
+                _usuarioIngresa = value;
+            }
+        }
+
+        public int UsuarioModifica
+        {
+            get
+            {
+                return _usuarioModifica;
+            }
+
+            set
+            {
+                _usuarioModifica = value;
             }
         }
     }

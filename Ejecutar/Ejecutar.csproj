@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FCB94D6-35BB-47FE-90F6-A847283E5865}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{C17B0607-4870-48D9-9219-93362BBAF476}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entidades</RootNamespace>
-    <AssemblyName>Entidades</AssemblyName>
+    <RootNamespace>Ejecutar</RootNamespace>
+    <AssemblyName>Ejecutar</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,23 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="entAlumnos.cs" />
-    <Compile Include="entAlumnosXLugar.cs" />
-    <Compile Include="entConfiguraciones.cs" />
-    <Compile Include="entLugares.cs" />
-    <Compile Include="entMaterias.cs" />
-    <Compile Include="entMateriasXCarrera.cs" />
-    <Compile Include="entMateriasXMatricula.cs" />
-    <Compile Include="entMatriculas.cs" />
-    <Compile Include="entProfesores.cs" />
-    <Compile Include="entProfesoresXLugar.cs" />
-    <Compile Include="entTipos.cs" />
-    <Compile Include="entTiposAsociados.cs" />
-    <Compile Include="entTiposXAlumno.cs" />
-    <Compile Include="entTiposXInstitucion.cs" />
-    <Compile Include="entTiposXProfesor.cs" />
-    <Compile Include="entUsuarios.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{ca7babd5-5266-489a-939b-20e30290217f}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{3fcb94d6-35bb-47fe-90f6-a847283e5865}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{a4548730-1f08-4880-b14a-1fb3955e7ee8}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

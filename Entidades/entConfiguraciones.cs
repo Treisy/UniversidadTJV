@@ -10,9 +10,22 @@ namespace Entidades
     {
         //Atributos
         private int _idConfiguracion;
-        private string _nombre_institucion;
+        private string _nombreInstitucion;
         private string _logo;
         private string _cuatrimestre;
+        private int _usuarioIngresa;
+        private int _usuarioModifica;
+
+        //COnstructor
+        public entConfiguraciones()
+        {
+            IdConfiguracion = 0;
+            NombreInstitucion = string.Empty;
+            Logo = string.Empty;
+            Cuatrimestre = string.Empty;
+            UsuarioIngresa = 0;
+            UsuarioModifica = 0;
+    }
 
         //Encapsulamientos
         public int IdConfiguracion
@@ -25,19 +38,6 @@ namespace Entidades
             set
             {
                 _idConfiguracion = value;
-            }
-        }
-
-        public string Nombre_institucion
-        {
-            get
-            {
-                return _nombre_institucion;
-            }
-
-            set
-            {
-                _nombre_institucion = value;
             }
         }
 
@@ -67,7 +67,43 @@ namespace Entidades
             }
         }
 
-        
+        public int UsuarioIngresa
+        {
+            get
+            {
+                return _usuarioIngresa;
+            }
 
+            set
+            {
+                _usuarioIngresa = value;
+            }
+        }
+
+        public int UsuarioModifica
+        {
+            get
+            {
+                return _usuarioModifica;
+            }
+
+            set
+            {
+                _usuarioModifica = value;
+            }
+        }
+
+        public string NombreInstitucion
+        {
+            get
+            {
+                return _nombreInstitucion;
+            }
+
+            set
+            {
+                _nombreInstitucion = value;
+            }
+        }
     }
 }

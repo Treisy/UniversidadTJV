@@ -16,9 +16,11 @@ namespace Entidades
         private string _nombre;
         private string _primerApellido;
         private string _segundoApellido;
+        private int _usuarioIngresa;
+        private int _usuarioModifica;
 
         //Constructor
-        private entUsuarios()
+        public entUsuarios()
         {
             IdUsuario = 0;
             Cedula = string.Empty;
@@ -27,6 +29,8 @@ namespace Entidades
             Nombre = string.Empty;
             PrimerApellido = string.Empty;
             SegundoApellido = string.Empty;
+            UsuarioIngresa = 0;
+            UsuarioModifica = 0;
         }
 
 
@@ -119,6 +123,32 @@ namespace Entidades
             set
             {
                 _segundoApellido = value;
+            }
+        }
+
+        public int UsuarioIngresa
+        {
+            get
+            {
+                return _usuarioIngresa;
+            }
+
+            set
+            {
+                _usuarioIngresa = value;
+            }
+        }
+
+        public int UsuarioModifica
+        {
+            get
+            {
+                return _usuarioModifica;
+            }
+
+            set
+            {
+                _usuarioModifica = value;
             }
         }
     }

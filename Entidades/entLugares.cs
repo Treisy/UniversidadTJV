@@ -12,14 +12,18 @@ namespace Entidades
         private int _idLugar;
         private string _nombre;
         private int _padreId;
+        private int _usuarioIngresa;
+        private int _usuarioModifica;
 
         //Constructor
-        //private entLugares()
-        //{
-        //    IdLugar = 0;
-        //    Nombre = string.Empty;
-        //    PadreId = 0;
-        //}
+        public entLugares()
+        {
+            IdLugar = 0;
+            Nombre = string.Empty;
+            PadreId = 0;
+            UsuarioIngresa = 0;
+            UsuarioModifica = 0;
+        }
 
         //Encapsulamientos
         public int IdLugar
@@ -58,6 +62,32 @@ namespace Entidades
             set
             {
                 _padreId = value;
+            }
+        }
+
+        public int UsuarioIngresa
+        {
+            get
+            {
+                return _usuarioIngresa;
+            }
+
+            set
+            {
+                _usuarioIngresa = value;
+            }
+        }
+
+        public int UsuarioModifica
+        {
+            get
+            {
+                return _usuarioModifica;
+            }
+
+            set
+            {
+                _usuarioModifica = value;
             }
         }
     }
