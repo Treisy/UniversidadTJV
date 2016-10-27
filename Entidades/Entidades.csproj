@@ -41,20 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entAlumnos.cs" />
-    <Compile Include="entAlumnosXLugar.cs" />
-    <Compile Include="entConfiguraciones.cs" />
     <Compile Include="entLugares.cs" />
     <Compile Include="entMaterias.cs" />
-    <Compile Include="entMateriasXCarrera.cs" />
-    <Compile Include="entMateriasXMatricula.cs" />
-    <Compile Include="entMatriculas.cs" />
     <Compile Include="entProfesores.cs" />
-    <Compile Include="entProfesoresXLugar.cs" />
     <Compile Include="entTipos.cs" />
-    <Compile Include="entTiposAsociados.cs" />
-    <Compile Include="entTiposXAlumno.cs" />
-    <Compile Include="entTiposXInstitucion.cs" />
-    <Compile Include="entTiposXProfesor.cs" />
     <Compile Include="entUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -16,11 +16,9 @@ namespace Entidades
         private string _segundoApellido;
         private DateTime _fechaNacimiento;
         private int _idCarrera;
-        private int _usuarioIngresa;
-        private int _usuarioModifica;
-        private List<entTiposAsociados> _tiposAsociados;
+
         //Constructor
-        public entAlumnos()
+        private entAlumnos()
         {
             IdAlumno = 0;
             Cedula = string.Empty;
@@ -29,8 +27,6 @@ namespace Entidades
             SegundoApellido = string.Empty;
             FechaNacimiento = DateTime.Now;
             IdCarrera = 0;
-            UsuarioIngresa = 0;
-            UsuarioModifica = 0;
         }
 
         //Encapsulamientos
@@ -122,45 +118,6 @@ namespace Entidades
             set
             {
                 _idCarrera = value;
-            }
-        }
-
-        public int UsuarioIngresa
-        {
-            get
-            {
-                return _usuarioIngresa;
-            }
-
-            set
-            {
-                _usuarioIngresa = value;
-            }
-        }
-
-        public int UsuarioModifica
-        {
-            get
-            {
-                return _usuarioModifica;
-            }
-
-            set
-            {
-                _usuarioModifica = value;
-            }
-        }
-
-        public List<entTiposAsociados> TiposAsociados
-        {
-            get
-            {
-                return _tiposAsociados;
-            }
-
-            set
-            {
-                _tiposAsociados = value;
             }
         }
     }

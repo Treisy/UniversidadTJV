@@ -13,19 +13,6 @@ namespace Entidades
         private float _costo;
         private int _idCarrera;
         private int _idMateria;
-        private int _usuarioIngresa;
-        private int _usuarioModifica;
-
-        //Constructor
-        public entMateriasXCarrera()
-        {
-            Id = 0;
-            Costo = 0;
-            IdCarrera = 0;
-            IdMateria = 0;
-            UsuarioIngresa = 0;
-            UsuarioModifica = 0;
-         }
 
         //Encapsulamientos
         public int Id
@@ -77,32 +64,6 @@ namespace Entidades
             set
             {
                 _idMateria = value;
-            }
-        }
-
-        public int UsuarioIngresa
-        {
-            get
-            {
-                return _usuarioIngresa;
-            }
-
-            set
-            {
-                _usuarioIngresa = value;
-            }
-        }
-
-        public int UsuarioModifica
-        {
-            get
-            {
-                return _usuarioModifica;
-            }
-
-            set
-            {
-                _usuarioModifica = value;
             }
         }
     }
